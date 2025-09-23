@@ -114,7 +114,10 @@ const Hero = () => {
                   onError={(e) => {
                     // Fallback to initials if image fails to load
                     e.currentTarget.style.display = 'none'
-                    e.currentTarget.nextElementSibling.style.display = 'flex'
+                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement
+                    if (nextElement) {
+                      nextElement.style.display = 'flex'
+                    }
                   }}
                 />
                 <div className="w-full h-full bg-gradient-to-br from-chatgpt-green-darker to-chatgpt-green-darkest flex items-center justify-center" style={{ display: 'none' }}>
