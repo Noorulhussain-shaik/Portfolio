@@ -75,7 +75,7 @@ const Hero = () => {
 
               <div className="flex justify-center lg:justify-start space-x-6 pt-4">
                 <a
-                  href="https://github.com/noorulshaik"
+                  href="https://github.com/Noorulhussain-shaik"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-custom-navy-text hover:text-chatgpt-green transition-colors"
